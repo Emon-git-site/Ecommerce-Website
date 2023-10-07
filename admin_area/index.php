@@ -54,11 +54,11 @@
                 <p class="text-light text-center">Admin Name</p>
             </div>
             <div class="button text-center">
-                <button><a href="" class="nav-link text-light bg-info m-1 p-2">Insert Products</a></button>
-                <button><a href="" class="nav-link text-light bg-info m-1 p-2">View Products</a></button>
+                <button><a href="index.php?insert_category" class="nav-link text-light bg-info m-1 p-2">Insert Products</a></button>
+                <button><a href="#" class="nav-link text-light bg-info m-1 p-2">View Products</a></button>
                 <button><a href="" class="nav-link text-light bg-info m-1 p-2">Insert Categories</a></button>
                 <button><a href="" class="nav-link text-light bg-info m-1 p-2">View Categories</a></button>
-                <button><a href="" class="nav-link text-light bg-info m-1 p-2">Insert Brands</a></button>
+                <button><a href="index.php?insert_brand" class="nav-link text-light bg-info m-1 p-2">Insert Brands</a></button>
                 <button><a href="" class="nav-link text-light bg-info m-1 p-2">view Brands</a></button>
                 <button><a href="" class="nav-link text-light bg-info m-1 p-2">All orders</a></button>
                 <button><a href="" class="nav-link text-light bg-info m-1 p-2">All payment</a></button>
@@ -66,6 +66,18 @@
                 <button><a href="" class="nav-link text-light bg-info m-1 p-2">Logout</a></button>
             </div>
         </div>
+    </div>
+
+    <!-- fourth child  -->
+    <div class="container my-5">
+        <?php
+        if(isset($_GET['insert_category'])){
+            require_once "insert_categories.php";
+        }
+        if(isset($_GET['insert_brand'])){
+            require_once "insert_brands.php";
+        }
+        ?>
     </div>
     
      <!-- last child -->
