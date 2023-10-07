@@ -190,7 +190,7 @@
     </div>
 
     <!-- last child -->
-    <div class="bg-info p-3 text-center">
+    <div class="bg-info p-3 text-center footer">
       <p>All rights reserved @- Designed by alauddin-2023</p>
     </div>
     <!-- bootstrap js link -->
