@@ -1,0 +1,9 @@
+.logo{
+    height: 3%;
+    width: 3%;
+}
+.card_image{
+    height: 10rem;
+    width: 100%;
+    object-fit: contain;
+}
