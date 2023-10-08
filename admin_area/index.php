@@ -12,7 +12,7 @@
     <!-- css file -->
     <link rel="stylesheet" href="../style.css">
     <style>
-        .admin_image{
+        .admin_image {
             width: 100px;
             object-fit: contain;
         }
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+
     <!-- navbar-->
     <div class="container-fluid p-0">
         <!-- first child -->
@@ -71,18 +72,19 @@
     <!-- fourth child  -->
     <div class="container my-5">
         <?php
-        if(isset($_GET['insert_category'])){
+        if (isset($_GET['insert_category'])) {
             require_once "insert_categories.php";
         }
-        if(isset($_GET['insert_brand'])){
+        if (isset($_GET['insert_brand'])) {
             require_once "insert_brands.php";
         }
         ?>
     </div>
-    
-     <!-- last child -->
-     <div class="bg-info p-3 text-center footer">
-      <p>All rights reserved @- Designed by alauddin-2023</p>
+
+    <!-- last child -->
+
+    <div class="bg-info p-3 w-100 text-center footer">
+        <p>All rights reserved @- Designed by alauddin-2023</p>
     </div>
     <!-- Bootstrap js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
