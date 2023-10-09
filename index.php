@@ -155,8 +155,8 @@ require_once "includes/connect.php" ?>;
         $select_brands = "SELECT * FROM `brands`";
         $result_brands = mysqli_query($con, $select_brands);
         while($row_data = mysqli_fetch_assoc($result_brands)){
-         $brand_name = $row_data['name'];
-         $brand_id = $row_data['id'];
+         $brand_name = $row_data['brand_name'];
+         $brand_id = $row_data['brand_id'];
 
          
          echo "<li class='nav-item'> <a href='index.php?brand=$brand_id' class='nav-link text-light'>$brand_name </a></li>" ;
@@ -175,8 +175,8 @@ require_once "includes/connect.php" ?>;
         $select_category = "SELECT * FROM `categories`";
         $result_category = mysqli_query($con, $select_category );
         while($row_data = mysqli_fetch_assoc($result_category)){
-          $category_id = $row_data['id'];
-          $category_name = $row_data['name'];
+          $category_id = $row_data['category_id'];
+          $category_name = $row_data['category_name'];
 
          echo "<li class='nav-item'>
             <a href='index.php?category_id=$category_id' class='nav-link text-light'>$category_name</a>

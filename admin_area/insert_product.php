@@ -46,8 +46,8 @@ require_once "../includes/connect.php" ;
              $select_query = "SELECT * FROM `categories`";
              $result_query = mysqli_query($con, $select_query);
              while($row = mysqli_fetch_assoc($result_query)){
-                 $category_id = $row['id'];
-                 $category_name = $row['name'];
+                 $category_id = $row['category_id'];
+                 $category_name = $row['category_name'];
 
                 echo "<option value='$category_id'>$category_name</option>" ;
              }
@@ -67,8 +67,8 @@ require_once "../includes/connect.php" ;
              $select_query = "SELECT * FROM `brands`";
              $result_query = mysqli_query($con, $select_query);
              while($row = mysqli_fetch_assoc($result_query)){
-                 $brand_id = $row['id'];
-                 $brand_name = $row['name'];
+                 $brand_id = $row['brand_id'];
+                 $brand_name = $row['brand_name'];
                 echo "<option value='$brand_id'>$brand_name</option>" ;
              }
 
