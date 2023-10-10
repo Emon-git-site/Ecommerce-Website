@@ -5,7 +5,7 @@ echo '<h2 class="text-center">Insert Categories</h2>';
 
 if (isset($_POST['insert_category'])) {
   $category_title = $_POST['category_title'];
-  $select_sql = " SELECT *  FROM `categories`  WHERE `name` = '$category_title' ";
+  $select_sql = " SELECT *  FROM `categories`  WHERE `category_name` = '$category_title' ";
   $get_row = mysqli_query($con, $select_sql);
   $row_number = mysqli_num_rows($get_row);
   if ($row_number > 0) {  ?>
@@ -18,7 +18,7 @@ if (isset($_POST['insert_category'])) {
     </div>
 
     <?php } else {
-    $insert_sql = "INSERT INTO `categories` (`name`) VALUES ('$category_title')";
+    $insert_sql = "INSERT INTO `categories` (`category_name`) VALUES ('$category_title')";
     $result = mysqli_query($con, $insert_sql);
     if ($result) { ?>
        <div class="alert alert-primary alert-dismissible fade show" role="alert">

@@ -5,8 +5,8 @@ echo '<h2 class="text-center">Insert Brands</h2>';
 
 if(isset($_POST['brand_submit'])){
   $brand_name = $_POST['insert_brand'];
-  $select_query = "SELECT * FROM `brands` WHERE  `name` = '$brand_name' ";
-  $insert_query = "INSERT INTO `brands` (`name`) VALUES  ('$brand_name') ";
+  $select_query = "SELECT * FROM `brands` WHERE  `brand_name` = '$brand_name' ";
+  $insert_query = "INSERT INTO `brands` (`brand_name`) VALUES  ('$brand_name') ";
   $get_row = mysqli_query($con, $select_query);
   $row_number = mysqli_num_rows($get_row);
   if($row_number > 0){ ?>
